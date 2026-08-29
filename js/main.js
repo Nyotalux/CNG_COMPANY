@@ -44,6 +44,10 @@ const translations = {
     "services.s3.desc": "Solutions de toiture étanches, isolées et esthétiques.",
     "services.s4.title": "Réparation de fondations",
     "services.s4.desc": "Réparation et renforcement de fondations pour la stabilité de vos ouvrages.",
+    "services.s1.detail": "Rénovation intérieure et extérieure, isolation, remise aux normes, rafraîchissement énergétique. Nous redonnons vie à vos bâtiments dans le respect de leur caractère et de votre budget.",
+    "services.s2.detail": "Cloisons, plafonds suspendus, peinture, revêtements de sol et de mur. Un rendu soigné et durable, réalisé par des artisans expérimentés.",
+    "services.s3.detail": "Couverture, étanchéité, isolation thermique et rénovation de toiture. Des matériaux durables pour une protection optimale de votre bâtiment.",
+    "services.s4.detail": "Diagnostic, reprise en sous-œuvre, injection et renforcement des fondations. Nous sécurisons la stabilité de vos structures sur le long terme.",
     "services.learn": "En savoir plus",
 
     "about.title": "À propos de notre entreprise",
@@ -81,11 +85,11 @@ const translations = {
 
     "testi.title": "Ce Que Disent Nos Clients",
     "testi.sub": "Ils nous font confiance et partagent leur expérience.",
-    "testi.c1.name": "Alice Martin",
+    "testi.c1.name": "Pascal Mwisha",
     "testi.c1.text": "Une équipe professionnelle et à l'écoute. Notre villa a été livrée à temps et avec une finition impeccable.",
-    "testi.c2.name": "David Kane",
+    "testi.c2.name": "Christian Mushid",
     "testi.c2.text": "CNG Company a su transformer notre espace commercial. Communication claire et outils innovants au rendez-vous.",
-    "testi.c3.name": "Sophia Nguyen",
+    "testi.c3.name": "Adam Badibanga",
     "testi.c3.text": "Qualité exceptionnelle et respect du budget. Je recommande vivement pour tous vos projets de construction.",
 
     "blog.title": "Construire Mieux Ensemble",
@@ -146,6 +150,10 @@ const translations = {
     "services.s3.desc": "Waterproof, insulated and aesthetic roofing solutions.",
     "services.s4.title": "Foundation Repair",
     "services.s4.desc": "Foundation repair and reinforcement for structure stability.",
+    "services.s1.detail": "Interior and exterior renovation, insulation, compliance upgrades, energy renewal. We bring new life to your buildings while respecting their character and your budget.",
+    "services.s2.detail": "Partitions, suspended ceilings, painting, floor and wall coverings. A neat and durable finish, delivered by experienced craftsmen.",
+    "services.s3.detail": "Roofing, waterproofing, thermal insulation and roof renovation. Durable materials for optimal protection of your building.",
+    "services.s4.detail": "Diagnosis, under-pinning, injection and foundation reinforcement. We secure the long-term stability of your structures.",
     "services.learn": "Learn More",
 
     "about.title": "About Our Company",
@@ -361,6 +369,15 @@ function scrollServices(dir) {
 
 if (nextBtn) nextBtn.addEventListener("click", () => scrollServices(1));
 if (prevBtn) prevBtn.addEventListener("click", () => scrollServices(-1));
+
+/* ---------- Services : Learn More (détails dépliables) ---------- */
+document.querySelectorAll(".learn-more[data-target]").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const card = btn.closest(".service-card");
+    if (!card) return;
+    card.classList.toggle("open");
+  });
+});
 
 /* ---------- Accordion ---------- */
 document.querySelectorAll(".acc-head").forEach((head) => {
