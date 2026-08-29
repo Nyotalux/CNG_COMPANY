@@ -16,8 +16,16 @@ const translations = {
     "nav.contact": "Contact",
     "nav.cta": "Réserver",
 
-    "hero.title": "Technologies Innovantes pour la Construction <em>Moderne</em>",
-    "hero.text": "Nous utilisons des technologies de pointe — impression 3D, drones, BIM — pour livrer des constructions plus rapides, plus sûres et plus durables. CNG Company conjugue innovation et savoir-faire au service de vos projets.",
+    "hero.s1.title": "Technologies Innovantes pour la Construction <em>Moderne</em>",
+    "hero.s1.text": "Nous utilisons des technologies de pointe — impression 3D, drones, BIM — pour livrer des constructions plus rapides, plus sûres et plus durables.",
+    "hero.s2.title": "Bâtiment résidentiel de <em>haut standing</em>",
+    "hero.s2.text": "Des villas et immeubles d'habitation pensés pour le confort, la sécurité et la durabilité, avec un suivi de chantier rigoureux.",
+    "hero.s3.title": "Bâtiments commerciaux <em>et bureaux</em>",
+    "hero.s3.text": "Des espaces de travail et de commerce modernes, conçus pour la performance, l'accessibilité et l'attractivité de votre activité.",
+    "hero.s4.title": "Travaux publics <em>et infrastructures</em>",
+    "hero.s4.text": "Routes, ouvrages d'art et aménagements urbains réalisés dans le respect des normes, pour des territoires mieux connectés.",
+    "hero.s5.title": "Rénovation et <em>valorisation</em> de biens",
+    "hero.s5.text": "Redonnez vie à vos espaces : rénovation, extension et réhabilitation avec des matériaux durables et un rendu impeccable.",
     "hero.rating": "4,9 / 5 · Recommandé par nos clients",
     "hero.cta1": "Contact rapide",
     "hero.cta2": "Appelez-nous",
@@ -110,8 +118,16 @@ const translations = {
     "nav.contact": "Contact",
     "nav.cta": "Book Now",
 
-    "hero.title": "Innovative Technologies for Modern <em>Construction</em>",
-    "hero.text": "We use cutting-edge technologies — 3D printing, drones, BIM — to deliver faster, safer and more sustainable constructions. CNG Company combines innovation and expertise for your projects.",
+    "hero.s1.title": "Innovative Technologies for Modern <em>Construction</em>",
+    "hero.s1.text": "We use cutting-edge technologies — 3D printing, drones, BIM — to deliver faster, safer and more sustainable constructions.",
+    "hero.s2.title": "High-end <em>residential</em> building",
+    "hero.s2.text": "Homes and residential buildings designed for comfort, safety and durability, with rigorous site supervision.",
+    "hero.s3.title": "Commercial buildings <em>and offices</em>",
+    "hero.s3.text": "Modern work and retail spaces, designed for performance, accessibility and the attractiveness of your activity.",
+    "hero.s4.title": "Public works <em>and infrastructure</em>",
+    "hero.s4.text": "Roads, structures and urban developments built to standard, for better connected territories.",
+    "hero.s5.title": "Renovation and <em>property</em> enhancement",
+    "hero.s5.text": "Give new life to your spaces: renovation, extension and rehabilitation with durable materials and an impeccable finish.",
     "hero.rating": "4.9 / 5 · Trusted by clients",
     "hero.cta1": "Quick Note",
     "hero.cta2": "Call us",
@@ -272,6 +288,64 @@ function animateCounters() {
   });
 }
 
+/* ---------- Carrousel Héro ---------- */
+const heroTrack = document.getElementById("heroTrack");
+const heroPrev = document.getElementById("heroPrev");
+const heroNext = document.getElementById("heroNext");
+const heroDots = document.getElementById("heroDots");
+
+let currentSlide = 0;
+let heroSlides = [];
+let heroInterval = null;
+
+function initHeroCarousel() {
+  if (!heroTrack) return;
+  heroSlides = Array.from(heroTrack.querySelectorAll(".hero-slide"));
+
+  // Créer les points
+  heroSlides.forEach((_, i) => {
+    const dot = document.createElement("button");
+    dot.className = "hero-dot" + (i === 0 ? " active" : "");
+    dot.setAttribute("aria-label", "Slide " + (i + 1));
+    dot.addEventListener("click", () => goToSlide(i));
+    heroDots.appendChild(dot);
+  });
+
+  startAutoPlay();
+}
+
+function goToSlide(index) {
+  const total = heroSlides.length;
+  currentSlide = (index + total) % total;
+  heroSlides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === currentSlide);
+  });
+  document.querySelectorAll(".hero-dot").forEach((dot, i) => {
+    dot.classList.toggle("active", i === currentSlide);
+  });
+  resetAutoPlay();
+}
+
+function nextSlide() {
+  goToSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+  goToSlide(currentSlide - 1);
+}
+
+function startAutoPlay() {
+  heroInterval = setInterval(nextSlide, 5000);
+}
+
+function resetAutoPlay() {
+  clearInterval(heroInterval);
+  startAutoPlay();
+}
+
+if (heroNext) heroNext.addEventListener("click", nextSlide);
+if (heroPrev) heroPrev.addEventListener("click", prevSlide);
+
 /* ---------- Carrousel Services ---------- */
 const track = document.getElementById("servicesTrack");
 const prevBtn = document.getElementById("servicesPrev");
@@ -375,6 +449,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
 function init() {
   applyLanguage(currentLang);
   handleReveal();
+  initHeroCarousel();
   window.addEventListener("scroll", () => {
     highlightNav();
   });

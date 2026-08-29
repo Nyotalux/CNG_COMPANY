@@ -25,12 +25,7 @@
   <header class="header" id="header">
     <div class="container nav">
       <a href="#home" class="brand">
-        <span class="brand-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z" />
-            <circle cx="12" cy="11" r="3.5" />
-          </svg>
-        </span>
+        <img class="brand-logo" src="asserts/logo.jpeg" alt="Logo CNG Company">
         <span class="brand-text">CNG&nbsp;Company</span>
       </a>
 
@@ -59,46 +54,102 @@
 
   <main>
 
-    <!-- ===== SECTION HERO ===== -->
+    <!-- ===== SECTION HERO (Carrousel 5 photos) ===== -->
     <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-left">
-          <h1 class="hero-title" data-i18n="hero.title">Innovative Technologies for Modern <em>Construction</em></h1>
-          <div class="hero-photo">
-            <img src="asserts/WhatsApp Image 2026-08-24 at 17.27.20.jpeg" alt="Ingénieurs sur un chantier" loading="eager">
+      <div class="hero-track" id="heroTrack">
+        <!-- Slide 1 -->
+        <div class="hero-slide active">
+          <div class="hero-bg" style="background-image:url('asserts/3.jpeg')"></div>
+          <div class="hero-overlay"></div>
+          <div class="container hero-grid">
+            <div class="hero-left">
+              <h1 class="hero-title" data-i18n="hero.s1.title">Innovative Technologies for Modern <em>Construction</em></h1>
+              <div class="hero-photo">
+                <img src="asserts/3.jpeg" alt="Chantier de construction" loading="eager">
+              </div>
+            </div>
+            <div class="hero-right">
+              <p class="hero-text" data-i18n="hero.s1.text">Nous utilisons des technologies de pointe — impression 3D, drones, BIM — pour livrer des constructions plus rapides, plus sûres et plus durables.</p>
+              <div class="hero-buttons">
+                <a href="#contact" class="btn btn-accent" data-i18n="hero.cta1">Quick Note</a>
+                <a href="tel:+1234567890" class="btn btn-ghost" data-i18n="hero.cta2">Call us</a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="hero-right">
-          <p class="hero-text" data-i18n="hero.text">Nous utilisons des technologies de pointe — impression 3D, drones, BIM — pour livrer des constructions plus rapides, plus sûres et plus durables. CNG Company conjugue innovation et savoir-faire au service de vos projets.</p>
-
-          <div class="hero-team">
-            <div class="avatars">
-              <span class="avatar" style="background-image:url('asserts/WhatsApp Image 2026-08-24 at 17.27.27.jpeg')"></span>
-              <span class="avatar" style="background-image:url('asserts/WhatsApp Image 2026-08-24 at 17.27.22 (3).jpeg')"></span>
-              <span class="avatar" style="background-image:url('asserts/WhatsApp Image 2026-08-24 at 17.27.21 (2).jpeg')"></span>
-              <span class="avatar" style="background-image:url('asserts/WhatsApp Image 2026-08-24 at 17.27.24 (1).jpeg')"></span>
-              <span class="avatar avatar-more">+</span>
+        <!-- Slide 2 -->
+        <div class="hero-slide">
+          <div class="hero-bg" style="background-image:url('asserts/WhatsApp Image 2026-08-24 at 17.27.20.jpeg')"></div>
+          <div class="hero-overlay"></div>
+          <div class="container hero-grid">
+            <div class="hero-left">
+              <h1 class="hero-title" data-i18n="hero.s2.title">Bâtiment résidentiel de <em>haut standing</em></h1>
+              <div class="hero-photo">
+                <img src="asserts/WhatsApp Image 2026-08-24 at 17.27.20.jpeg" alt="Ingénieurs sur chantier" loading="eager">
+              </div>
             </div>
-            <div class="rating">
-              <div class="stars" aria-label="5 étoiles">★★★★★</div>
-              <span class="rating-text" data-i18n="hero.rating">4.9 / 5 · Trusted by clients</span>
+            <div class="hero-right">
+              <p class="hero-text" data-i18n="hero.s2.text">Des villas et immeubles d'habitation pensés pour le confort, la sécurité et la durabilité, avec un suivi de chantier rigoureux.</p>
+              <div class="hero-buttons">
+                <a href="#contact" class="btn btn-accent" data-i18n="hero.cta1">Quick Note</a>
+                <a href="tel:+1234567890" class="btn btn-ghost" data-i18n="hero.cta2">Call us</a>
+              </div>
             </div>
-          </div>
-
-          <div class="hero-buttons">
-            <a href="#contact" class="btn btn-accent" data-i18n="hero.cta1">Quick Note</a>
-            <a href="tel:+1234567890" class="btn btn-ghost" data-i18n="hero.cta2">Call us</a>
-          </div>
-
-          <div class="hero-badge" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
-              <path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z" />
-              <circle cx="12" cy="11" r="3.5" />
-            </svg>
-            <span class="badge-text">CNG<span>Company</span></span>
           </div>
         </div>
+
+        <!-- Slide 3 -->
+        <div class="hero-slide">
+          <div class="hero-bg" style="background-image:url('asserts/4.jpeg')"></div>
+          <div class="hero-overlay"></div>
+          <div class="container hero-grid">
+            <div class="hero-left">
+              <h1 class="hero-title" data-i18n="hero.s3.title">Bâtiments commerciaux <em>et bureaux</em></h1>
+              <div class="hero-photo">
+                <img src="asserts/4.jpeg" alt="Bâtiment commercial" loading="eager">
+              </div>
+            </div>
+            <div class="hero-right">
+              <p class="hero-text" data-i18n="hero.s3.text">Des espaces de travail et de commerce modernes, conçus pour la performance, l'accessibilité et l'attractivité de votre activité.</p>
+              <div class="hero-buttons">
+                <a href="#contact" class="btn btn-accent" data-i18n="hero.cta1">Quick Note</a>
+                <a href="tel:+1234567890" class="btn btn-ghost" data-i18n="hero.cta2">Call us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+   
+
+        <!-- Slide 5 -->
+        <div class="hero-slide">
+          <div class="hero-bg" style="background-image:url('asserts/WhatsApp Image 2026-08-24 at 17.28.22.jpeg')"></div>
+          <div class="hero-overlay"></div>
+          <div class="container hero-grid">
+            <div class="hero-left">
+              <h1 class="hero-title" data-i18n="hero.s5.title">Rénovation et <em>valorisation</em> de biens</h1>
+              <div class="hero-photo">
+                <img src="asserts/WhatsApp Image 2026-08-24 at 17.28.22.jpeg" alt="Rénovation" loading="eager">
+              </div>
+            </div>
+            <div class="hero-right">
+              <p class="hero-text" data-i18n="hero.s5.text">Redonnez vie à vos espaces : rénovation, extension et réhabilitation avec des matériaux durables et un rendu impeccable.</p>
+              <div class="hero-buttons">
+                <a href="#contact" class="btn btn-accent" data-i18n="hero.cta1">Quick Note</a>
+                <a href="tel:+1234567890" class="btn btn-ghost" data-i18n="hero.cta2">Call us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contrôles du carrousel -->
+      <div class="hero-controls">
+        <button class="hero-arrow" id="heroPrev" aria-label="Précédent">←</button>
+        <div class="hero-dots" id="heroDots"></div>
+        <button class="hero-arrow" id="heroNext" aria-label="Suivant">→</button>
       </div>
     </section>
 
@@ -414,12 +465,7 @@
     <div class="container footer-grid">
       <div class="footer-col footer-col-brand">
         <a href="#home" class="brand brand-light">
-          <span class="brand-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z" />
-              <circle cx="12" cy="11" r="3.5" />
-            </svg>
-          </span>
+          <img class="brand-logo" src="asserts/logo.jpeg" alt="Logo CNG Company">
           <span class="brand-text">CNG&nbsp;Company</span>
         </a>
         <p data-i18n="footer.desc">Entreprise de construction et d'innovation technologique. Qualité, délais et professionnalisme.</p>
