@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CNG Company - Construction, bâtiment et travaux publics. Entreprise de construction professionnelle.">
+  <meta name="author" content="CNG Company">
+  <title>CNG Company | Construction & Bâtiment</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CNG Company">
+  <meta property="og:description" content="Construction, bâtiment et travaux publics. Votre partenaire de confiance.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="asserts/SITE_CONSTRUCTION.webp">
+
+  <!-- Preload Police -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#accueil" class="brand">
+        <span class="brand-mark">CNG</span>
+        <span class="brand-text">COMPANY</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="#accueil" class="nav-link active" data-i18n="nav.accueil">Accueil</a></li>
+          <li><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="#projets" class="nav-link" data-i18n="nav.projets">Projets</a></li>
+          <li><a href="#apropos" class="nav-link" data-i18n="nav.apropos">À propos</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="#contact" class="btn btn-primary" data-i18n="nav.cta">Devis gratuit</a>
+        </div>
+        <button class="lang-toggle" id="langToggle" aria-label="Changer de langue" title="Change language / Changer de langue">
+          <span id="langLabel">EN</span>
+        </button>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== SECTION ACCUEIL / HERO ===== -->
+    <section class="hero" id="accueil">
+      <div class="hero-bg" style="background-image: url('asserts/SITE_CONSTRUCTION.webp');"></div>
+      <div class="container hero-content">
+        <p class="hero-eyebrow" data-i18n="hero.eyebrow">Entreprise de construction depuis plus de 10 ans</p>
+        <h1 class="hero-title" data-i18n="hero.title">Construisons ensemble<br>votre <span>avenir</span></h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Bâtiment, génie civil et travaux publics. Des constructions durables, solides et à la hauteur de vos ambitions.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary btn-lg" data-i18n="hero.cta1">Demander un devis</a>
+          <a href="#projets" class="btn btn-outline btn-lg" data-i18n="hero.cta2">Voir nos réalisations</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" data-target="150">0</span><span class="stat-plus">+</span>
+            <span class="stat-label" data-i18n="hero.stat1">Projets réalisés</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+            <span class="stat-label" data-i18n="hero.stat2">Années d'expérience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span>
+            <span class="stat-label" data-i18n="hero.stat3">Clients satisfaits</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION SERVICES ===== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag" data-i18n="services.tag">Nos services</span>
+          <h2 class="section-title" data-i18n="services.title">Des services complets<br>pour tous vos projets</h2>
+          <p class="section-sub" data-i18n="services.sub">De la conception à la livraison, nous vous accompagnons à chaque étape.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">🏗️</div>
+            <h3 data-i18n="services.s1.title">Bâtiment résidentiel</h3>
+            <p data-i18n="services.s1.desc">Construction de maisons, villas et immeubles d'habitation avec des matériaux de qualité.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🏢</div>
+            <h3 data-i18n="services.s2.title">Bâtiments commerciaux</h3>
+            <p data-i18n="services.s2.desc">Bureaux, commerces, entrepôts : des infrastructures pensées pour l'activité économique.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🛣️</div>
+            <h3 data-i18n="services.s3.title">Travaux publics</h3>
+            <p data-i18n="services.s3.desc">Routes, ouvrages d'art et aménagements urbains conformes aux normes en vigueur.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🔨</div>
+            <h3 data-i18n="services.s4.title">Rénovation</h3>
+            <p data-i18n="services.s4.desc">Rénovation, réhabilitation et extension de bâtiments existants.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">📐</div>
+            <h3 data-i18n="services.s5.title">Études & conception</h3>
+            <p data-i18n="services.s5.desc">Plans, devis détaillés et suivi de chantier par des ingénieurs expérimentés.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">👷</div>
+            <h3 data-i18n="services.s6.title">Gestion de projet</h3>
+            <p data-i18n="services.s6.desc">Un chef de projet dédié, un planning maîtrisé et un budget respecté.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION PROJETS ===== -->
+    <section class="section section-dark" id="projets">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag" data-i18n="projets.tag">Réalisations</span>
+          <h2 class="section-title" data-i18n="projets.title">Nos projets récents</h2>
+          <p class="section-sub" data-i18n="projets.sub">Un aperçu de nos dernières réalisations, livrées dans les délais.</p>
+        </div>
+
+        <div class="projets-grid">
+          <figure class="projet-card">
+            <img src="asserts/WhatsApp Image 2026-08-28 at 12.04.22.jpeg" alt="Projet 1" loading="lazy">
+            <figcaption>
+              <h3 data-i18n="projets.p1.title">Résidence familiale</h3>
+              <p data-i18n="projets.p1.desc">Villa moderne livrée en 9 mois.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="projet-card">
+            <img src="asserts/WhatsApp Image 2026-08-24 at 17.27.22 (3).jpeg" alt="Projet 2" loading="lazy">
+            <figcaption>
+              <h3 data-i18n="projets.p2.title">Immeuble de bureaux</h3>
+              <p data-i18n="projets.p2.desc">Bâtiment commercial 3 niveaux.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="projet-card">
+            <img src="asserts/WhatsApp Image 2026-08-24 at 17.27.21 (2).jpeg" alt="Projet 3" loading="lazy">
+            <figcaption>
+              <h3 data-i18n="projets.p3.title">Aménagement urbain</h3>
+              <p data-i18n="projets.p3.desc">Voirie et aménagement d'un quartier.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="projet-card">
+            <img src="asserts/WhatsApp Image 2026-08-24 at 17.27.22.jpeg" alt="Projet 4" loading="lazy">
+            <figcaption>
+              <h3 data-i18n="projets.p4.title">Centre commercial</h3>
+              <p data-i18n="projets.p4.desc">Espace commercial moderne.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION À PROPOS ===== -->
+    <section class="section" id="apropos">
+      <div class="container apropos-grid">
+        <div class="apropos-media">
+          <img src="asserts/SITE_CONSTRUCTION.webp" alt="CNG Company - Chantier" loading="lazy">
+        </div>
+        <div class="apropos-content">
+          <span class="section-tag" data-i18n="apropos.tag">À propos</span>
+          <h2 class="section-title" data-i18n="apropos.title">Une entreprise de confiance</h2>
+          <p data-i18n="apropos.p1">CNG Company est une entreprise de construction fondée avec une passion pour le bâtiment et l'ingénierie. Nous conjuguons savoir-faire technique, matériaux de premier choix et rigueur pour livrer des ouvrages durables.</p>
+          <p data-i18n="apropos.p2">Notre équipe d'ingénieurs, de techniciens et d'ouvriers qualifiés intervient sur l'ensemble de vos projets, du plan initial à la remise des clés.</p>
+          <ul class="apropos-list">
+            <li data-i18n="apropos.l1">Équipe certifiée et expérimentée</li>
+            <li data-i18n="apropos.l2">Respect strict des délais et budgets</li>
+            <li data-i18n="apropos.l3">Matériaux de qualité certifiés</li>
+            <li data-i18n="apropos.l4">Suivi de chantier transparent</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" data-i18n="apropos.cta">Discutons de votre projet</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION CONTACT ===== -->
+    <section class="section section-dark" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <span class="section-tag" data-i18n="contact.tag">Contactez-nous</span>
+          <h2 class="section-title" data-i18n="contact.title">Parlons de votre projet</h2>
+          <p data-i18n="contact.p">Laissez-nous vos coordonnées, notre équipe vous recontacte rapidement avec un devis gratuit.</p>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label" data-i18n="contact.phone">Téléphone</span>
+              <a href="tel:+1234567890">+123 456 7890</a>
+            </li>
+            <li>
+              <span class="contact-label" data-i18n="contact.email">Email</span>
+              <a href="mailto:contact@cngcompany.com">contact@cngcompany.com</a>
+            </li>
+            <li>
+              <span class="contact-label" data-i18n="contact.adress">Adresse</span>
+              <span>123 Avenue du Bâtiment, Dakar</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name" data-i18n="form.name">Nom complet</label>
+            <input type="text" id="name" name="name" required placeholder="Votre nom">
+          </div>
+          <div class="form-group">
+            <label for="email" data-i18n="form.email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="vous@exemple.com">
+          </div>
+          <div class="form-group">
+            <label for="phone" data-i18n="form.phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+123 456 7890">
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="form.message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="form.submit">Envoyer le message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#accueil" class="brand">
+          <span class="brand-mark">CNG</span>
+          <span class="brand-text">COMPANY</span>
+        </a>
+        <p data-i18n="footer.desc">Entreprise de construction au service de vos projets. Qualité, délais et professionnalisme.</p>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer.nav">Navigation</h4>
+        <ul>
+          <li><a href="#accueil" data-i18n="nav.accueil">Accueil</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#projets" data-i18n="nav.projets">Projets</a></li>
+          <li><a href="#apropos" data-i18n="nav.apropos">À propos</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <ul>
+          <li><a href="tel:+1234567890">+123 456 7890</a></li>
+          <li><a href="mailto:contact@cngcompany.com">contact@cngcompany.com</a></li>
+          <li>123 Avenue du Bâtiment, Dakar</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> CNG Company. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
