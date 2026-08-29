@@ -3,81 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CNG Company - Construction, bâtiment et travaux publics. Entreprise de construction professionnelle.">
+  <meta name="description" content="CNG Company - Technologies innovantes pour la construction moderne. Rénovation, finitions, toitures, fondations.">
   <meta name="author" content="CNG Company">
-  <title>CNG Company | Construction & Bâtiment</title>
+  <title>CNG Company | Construction moderne</title>
 
   <!-- Open Graph -->
   <meta property="og:title" content="CNG Company">
-  <meta property="og:description" content="Construction, bâtiment et travaux publics. Votre partenaire de confiance.">
+  <meta property="og:description" content="Technologies innovantes pour la construction moderne.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="asserts/SITE_CONSTRUCTION.webp">
 
-  <!-- Preload Police -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ===== HEADER / NAVIGATION ===== -->
+  <!-- ===== HEADER / NAVBAR ===== -->
   <header class="header" id="header">
     <div class="container nav">
-      <a href="#accueil" class="brand">
-        <span class="brand-mark">CNG</span>
-        <span class="brand-text">COMPANY</span>
+      <a href="#home" class="brand">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z" />
+            <circle cx="12" cy="11" r="3.5" />
+          </svg>
+        </span>
+        <span class="brand-text">CNG&nbsp;Company</span>
       </a>
 
       <nav class="nav-menu" id="navMenu" aria-label="Navigation principale">
         <ul class="nav-list">
-          <li><a href="#accueil" class="nav-link active" data-i18n="nav.accueil">Accueil</a></li>
+          <li><a href="#home" class="nav-link active" data-i18n="nav.home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
           <li><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
-          <li><a href="#projets" class="nav-link" data-i18n="nav.projets">Projets</a></li>
-          <li><a href="#apropos" class="nav-link" data-i18n="nav.apropos">À propos</a></li>
+          <li><a href="#project" class="nav-link" data-i18n="nav.project">Project</a></li>
+          <li><a href="#blog" class="nav-link" data-i18n="nav.blog">Blog</a></li>
           <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
         </ul>
-        <div class="nav-cta">
-          <a href="#contact" class="btn btn-primary" data-i18n="nav.cta">Devis gratuit</a>
-        </div>
-        <button class="lang-toggle" id="langToggle" aria-label="Changer de langue" title="Change language / Changer de langue">
-          <span id="langLabel">EN</span>
-        </button>
       </nav>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Changer de langue">
+          <span id="langLabel">EN</span>
+        </button>
+        <a href="#contact" class="btn btn-dark" data-i18n="nav.cta">Book Now</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main>
 
-    <!-- ===== SECTION ACCUEIL / HERO ===== -->
-    <section class="hero" id="accueil">
-      <div class="hero-bg" style="background-image: url('asserts/SITE_CONSTRUCTION.webp');"></div>
-      <div class="container hero-content">
-        <p class="hero-eyebrow" data-i18n="hero.eyebrow">Entreprise de construction depuis plus de 10 ans</p>
-        <h1 class="hero-title" data-i18n="hero.title">Construisons ensemble<br>votre <span>avenir</span></h1>
-        <p class="hero-subtitle" data-i18n="hero.subtitle">Bâtiment, génie civil et travaux publics. Des constructions durables, solides et à la hauteur de vos ambitions.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary btn-lg" data-i18n="hero.cta1">Demander un devis</a>
-          <a href="#projets" class="btn btn-outline btn-lg" data-i18n="hero.cta2">Voir nos réalisations</a>
+    <!-- ===== SECTION HERO ===== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="hero-title" data-i18n="hero.title">Innovative Technologies for Modern <em>Construction</em></h1>
+          <div class="hero-photo">
+            <img src="asserts/WhatsApp Image 2026-08-24 at 17.27.20.jpeg" alt="Ingénieurs sur un chantier" loading="eager">
+          </div>
         </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-number" data-target="150">0</span><span class="stat-plus">+</span>
-            <span class="stat-label" data-i18n="hero.stat1">Projets réalisés</span>
+
+        <div class="hero-right">
+          <p class="hero-text" data-i18n="hero.text">Nous utilisons des technologies de pointe — impression 3D, drones, BIM — pour livrer des constructions plus rapides, plus sûres et plus durables. CNG Company conjugue innovation et savoir-faire au service de vos projets.</p>
+
+          <div class="hero-team">
+            <div class="avatars">
+              <span class="avatar" style="background-image:url('asserts/WhatsApp Image 2026-08-24 at 17.27.27.jpeg')"></span>
+              <span class="avatar" style="background-image:url('asserts/WhatsApp Image 2026-08-24 at 17.27.22 (3).jpeg')"></span>
+              <span class="avatar" style="background-image:url('asserts/WhatsApp Image 2026-08-24 at 17.27.21 (2).jpeg')"></span>
+              <span class="avatar" style="background-image:url('asserts/WhatsApp Image 2026-08-24 at 17.27.24 (1).jpeg')"></span>
+              <span class="avatar avatar-more">+</span>
+            </div>
+            <div class="rating">
+              <div class="stars" aria-label="5 étoiles">★★★★★</div>
+              <span class="rating-text" data-i18n="hero.rating">4.9 / 5 · Trusted by clients</span>
+            </div>
           </div>
-          <div class="stat">
-            <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
-            <span class="stat-label" data-i18n="hero.stat2">Années d'expérience</span>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-accent" data-i18n="hero.cta1">Quick Note</a>
+            <a href="tel:+1234567890" class="btn btn-ghost" data-i18n="hero.cta2">Call us</a>
           </div>
-          <div class="stat">
-            <span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span>
-            <span class="stat-label" data-i18n="hero.stat3">Clients satisfaits</span>
+
+          <div class="hero-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z" />
+              <circle cx="12" cy="11" r="3.5" />
+            </svg>
+            <span class="badge-text">CNG<span>Company</span></span>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION STATS ===== -->
+    <section class="stats">
+      <div class="container stats-row">
+        <div class="stat">
+          <span class="stat-number" data-target="150">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label" data-i18n="stats.s1">Complete Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="100">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label" data-i18n="stats.s2">Team Members</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="200">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label" data-i18n="stats.s3">Client Reviews</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="30">0</span>
+          <span class="stat-label" data-i18n="stats.s4">Winning Awards</span>
         </div>
       </div>
     </section>
@@ -85,161 +127,282 @@
     <!-- ===== SECTION SERVICES ===== -->
     <section class="section" id="services">
       <div class="container">
-        <div class="section-head">
-          <span class="section-tag" data-i18n="services.tag">Nos services</span>
-          <h2 class="section-title" data-i18n="services.title">Des services complets<br>pour tous vos projets</h2>
-          <p class="section-sub" data-i18n="services.sub">De la conception à la livraison, nous vous accompagnons à chaque étape.</p>
+        <div class="section-head services-head">
+          <h2 class="section-title" data-i18n="services.title">Services Tailored to You</h2>
+          <div class="arrows">
+            <button class="arrow-btn" id="servicesPrev" aria-label="Précédent">←</button>
+            <button class="arrow-btn" id="servicesNext" aria-label="Suivant">→</button>
+          </div>
         </div>
 
-        <div class="services-grid">
-          <article class="service-card">
+        <div class="services-track" id="servicesTrack">
+          <article class="service-card card-dark">
             <div class="service-icon">🏗️</div>
-            <h3 data-i18n="services.s1.title">Bâtiment résidentiel</h3>
-            <p data-i18n="services.s1.desc">Construction de maisons, villas et immeubles d'habitation avec des matériaux de qualité.</p>
+            <h3 data-i18n="services.s1.title">Building Renovation</h3>
+            <p data-i18n="services.s1.desc">Rénovation complète de bâtiments avec des matériaux modernes et durables.</p>
+            <a href="#contact" class="learn-more" data-i18n="services.learn">Learn More</a>
           </article>
 
           <article class="service-card">
-            <div class="service-icon">🏢</div>
-            <h3 data-i18n="services.s2.title">Bâtiments commerciaux</h3>
-            <p data-i18n="services.s2.desc">Bureaux, commerces, entrepôts : des infrastructures pensées pour l'activité économique.</p>
+            <div class="service-icon">🎨</div>
+            <h3 data-i18n="services.s2.title">Interior Finishing</h3>
+            <p data-i18n="services.s2.desc">Finitions intérieures raffinées : cloisons, plafonds, revêtements.</p>
+            <a href="#contact" class="learn-more" data-i18n="services.learn">Learn More</a>
           </article>
 
           <article class="service-card">
-            <div class="service-icon">🛣️</div>
-            <h3 data-i18n="services.s3.title">Travaux publics</h3>
-            <p data-i18n="services.s3.desc">Routes, ouvrages d'art et aménagements urbains conformes aux normes en vigueur.</p>
+            <div class="service-icon">🏠</div>
+            <h3 data-i18n="services.s3.title">Roofing Solutions</h3>
+            <p data-i18n="services.s3.desc">Solutions de toiture étanches, isolées et esthétiques.</p>
+            <a href="#contact" class="learn-more" data-i18n="services.learn">Learn More</a>
           </article>
 
           <article class="service-card">
-            <div class="service-icon">🔨</div>
-            <h3 data-i18n="services.s4.title">Rénovation</h3>
-            <p data-i18n="services.s4.desc">Rénovation, réhabilitation et extension de bâtiments existants.</p>
+            <div class="service-icon">🧱</div>
+            <h3 data-i18n="services.s4.title">Foundation Repair</h3>
+            <p data-i18n="services.s4.desc">Réparation et renforcement de fondations pour la stabilité de vos ouvrages.</p>
+            <a href="#contact" class="learn-more" data-i18n="services.learn">Learn More</a>
           </article>
+        </div>
+      </div>
+    </section>
 
-          <article class="service-card">
-            <div class="service-icon">📐</div>
-            <h3 data-i18n="services.s5.title">Études & conception</h3>
-            <p data-i18n="services.s5.desc">Plans, devis détaillés et suivi de chantier par des ingénieurs expérimentés.</p>
-          </article>
+    <!-- ===== SECTION ABOUT ===== -->
+    <section class="section section-grey" id="about">
+      <div class="container">
+        <div class="about-top">
+          <div>
+            <h2 class="section-title" data-i18n="about.title">About Our Company</h2>
+            <p data-i18n="about.text">Nous concevons et réalisons des ouvrages durables grâce à une équipe d'ingénieurs et de techniciens passionnés.</p>
+          </div>
+          <a href="#services" class="btn btn-accent" data-i18n="about.cta">Learn More</a>
+        </div>
 
-          <article class="service-card">
-            <div class="service-icon">👷</div>
-            <h3 data-i18n="services.s6.title">Gestion de projet</h3>
-            <p data-i18n="services.s6.desc">Un chef de projet dédié, un planning maîtrisé et un budget respecté.</p>
-          </article>
+        <div class="about-grid">
+          <div class="about-media">
+            <img class="about-img-main" src="asserts/WhatsApp Image 2026-08-24 at 17.28.22 (2).jpeg" alt="Plan d'architecte" loading="lazy">
+            <img class="about-img-inset" src="asserts/WhatsApp Image 2026-08-24 at 17.27.21.jpeg" alt="Ouvriers du bâtiment" loading="lazy">
+          </div>
+
+          <div class="accordion">
+            <div class="acc-item open">
+              <button class="acc-head" aria-expanded="true">
+                <span data-i18n="about.m1.title">Our Mission</span>
+                <span class="acc-icon">−</span>
+              </button>
+              <div class="acc-body">
+                <p data-i18n="about.m1.body">Notre mission est de transformer vos idées en réalisations concrètes, en alliant innovation technologique, sécurité et respect des délais.</p>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <button class="acc-head" aria-expanded="false">
+                <span data-i18n="about.m2.title">Our Vision</span>
+                <span class="acc-icon">+</span>
+              </button>
+              <div class="acc-body">
+                <p data-i18n="about.m2.body">Devenir la référence de la construction moderne, en plaçant la technologie et le développement durable au cœur de chaque chantier.</p>
+              </div>
+            </div>
+
+            <div class="acc-item">
+              <button class="acc-head" aria-expanded="false">
+                <span data-i18n="about.m3.title">Our History</span>
+                <span class="acc-icon">+</span>
+              </button>
+              <div class="acc-body">
+                <p data-i18n="about.m3.body">Depuis plus de 10 ans, CNG Company accumule une expertise solide et une réputation de fiabilité auprès de centaines de clients.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BANDEAU PARTENAIRES ===== -->
+    <section class="partners">
+      <div class="container partners-row">
+        <span class="partner">Constructionline</span>
+        <span class="partner">HD&nbsp;Construction</span>
+        <span class="partner">Parkside</span>
+        <span class="partner">BuildForge</span>
+        <span class="partner">EcoStruct</span>
+      </div>
+    </section>
+
+    <!-- ===== SECTION QUALITY ===== -->
+    <section class="section" id="quality">
+      <div class="container quality-grid">
+        <div class="quality-media">
+          <img src="asserts/WhatsApp Image 2026-08-24 at 17.27.22 (3).jpeg" alt="Professionnels sur chantier" loading="lazy">
+        </div>
+        <div class="quality-content">
+          <h2 class="section-title" data-i18n="quality.title">Quality That Speaks for Itself</h2>
+          <ul class="check-list">
+            <li data-i18n="quality.l1">Excellence in Every Detail</li>
+            <li data-i18n="quality.l2">Trusted Expertise &amp; Experience</li>
+            <li data-i18n="quality.l3">Innovative Solutions for Any Challenge</li>
+            <li data-i18n="quality.l4">Your Vision Is Our Priority</li>
+          </ul>
+          <a href="#project" class="btn btn-accent" data-i18n="quality.cta">Learn More</a>
         </div>
       </div>
     </section>
 
     <!-- ===== SECTION PROJETS ===== -->
-    <section class="section section-dark" id="projets">
+    <section class="section section-grey" id="project">
+      <div class="container">
+        <div class="projects-top">
+          <div>
+            <h2 class="section-title" data-i18n="project.title">Featured Construction Projects</h2>
+            <p data-i18n="project.text">Découvrez quelques-unes de nos réalisations les plus marquantes.</p>
+          </div>
+          <a href="#contact" class="btn btn-dark" data-i18n="project.cta">Go Project Page</a>
+        </div>
+
+        <div class="project-block">
+          <div class="project-text">
+            <h3 data-i18n="project.p1.title">Harbor View Residences</h3>
+            <ul class="project-meta">
+              <li><span data-i18n="project.location">Location</span> — <strong data-i18n="project.p1.loc">Waterfront</strong></li>
+              <li><span data-i18n="project.date">Date</span> — <strong data-i18n="project.p1.date">2025</strong></li>
+              <li><span data-i18n="project.scope">Scope</span> — <strong data-i18n="project.p1.scope">Residential</strong></li>
+            </ul>
+            <a href="#contact" class="btn btn-green" data-i18n="project.see">See Project</a>
+          </div>
+          <div class="project-media vertical">
+            <img src="asserts/WhatsApp Image 2026-08-24 at 17.27.23.jpeg" alt="Harbor View Residences" loading="lazy">
+          </div>
+        </div>
+
+        <div class="project-block reverse">
+          <div class="project-media horizontal">
+            <img src="asserts/WhatsApp Image 2026-08-24 at 17.27.22.jpeg" alt="Sunset Ridge Development" loading="lazy">
+          </div>
+          <div class="project-text">
+            <h3 data-i18n="project.p2.title">Sunset Ridge Development</h3>
+            <ul class="project-meta">
+              <li><span data-i18n="project.location">Location</span> — <strong data-i18n="project.p2.loc">Hillside</strong></li>
+              <li><span data-i18n="project.date">Date</span> — <strong data-i18n="project.p2.date">2024</strong></li>
+              <li><span data-i18n="project.scope">Scope</span> — <strong data-i18n="project.p2.scope">Commercial</strong></li>
+            </ul>
+            <a href="#contact" class="btn btn-green" data-i18n="project.see">See Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION TÉMOIGNAGES ===== -->
+    <section class="section" id="testimonials">
       <div class="container">
         <div class="section-head">
-          <span class="section-tag" data-i18n="projets.tag">Réalisations</span>
-          <h2 class="section-title" data-i18n="projets.title">Nos projets récents</h2>
-          <p class="section-sub" data-i18n="projets.sub">Un aperçu de nos dernières réalisations, livrées dans les délais.</p>
+          <h2 class="section-title" data-i18n="testi.title">Why Say Our Customers</h2>
+          <p class="section-sub" data-i18n="testi.sub">Ils nous font confiance et partagent leur expérience.</p>
         </div>
 
-        <div class="projets-grid">
-          <figure class="projet-card">
-            <img src="asserts/WhatsApp Image 2026-08-28 at 12.04.22.jpeg" alt="Projet 1" loading="lazy">
-            <figcaption>
-              <h3 data-i18n="projets.p1.title">Résidence familiale</h3>
-              <p data-i18n="projets.p1.desc">Villa moderne livrée en 9 mois.</p>
-            </figcaption>
-          </figure>
+        <div class="testi-grid">
+          <article class="testi-card">
+            <div class="testi-head">
+              <span class="testi-avatar" style="background-image:url('asserts/WhatsApp Image 2026-08-24 at 17.27.27.jpeg')"></span>
+              <div>
+                <strong data-i18n="testi.c1.name">Alice Martin</strong>
+                <div class="stars" aria-label="5 étoiles">★★★★★</div>
+              </div>
+            </div>
+            <p data-i18n="testi.c1.text">Une équipe professionnelle et à l'écoute. Notre villa a été livrée à temps et avec une finition impeccable.</p>
+          </article>
 
-          <figure class="projet-card">
-            <img src="asserts/WhatsApp Image 2026-08-24 at 17.27.22 (3).jpeg" alt="Projet 2" loading="lazy">
-            <figcaption>
-              <h3 data-i18n="projets.p2.title">Immeuble de bureaux</h3>
-              <p data-i18n="projets.p2.desc">Bâtiment commercial 3 niveaux.</p>
-            </figcaption>
-          </figure>
+          <article class="testi-card">
+            <div class="testi-head">
+              <span class="testi-avatar" style="background-image:url('asserts/WhatsApp Image 2026-08-24 at 17.27.22 (3).jpeg')"></span>
+              <div>
+                <strong data-i18n="testi.c2.name">David Kane</strong>
+                <div class="stars" aria-label="5 étoiles">★★★★★</div>
+              </div>
+            </div>
+            <p data-i18n="testi.c2.text">CNG Company a su transformer notre espace commercial. Communication claire et outils innovants au rendez-vous.</p>
+          </article>
 
-          <figure class="projet-card">
-            <img src="asserts/WhatsApp Image 2026-08-24 at 17.27.21 (2).jpeg" alt="Projet 3" loading="lazy">
-            <figcaption>
-              <h3 data-i18n="projets.p3.title">Aménagement urbain</h3>
-              <p data-i18n="projets.p3.desc">Voirie et aménagement d'un quartier.</p>
-            </figcaption>
-          </figure>
-
-          <figure class="projet-card">
-            <img src="asserts/WhatsApp Image 2026-08-24 at 17.27.22.jpeg" alt="Projet 4" loading="lazy">
-            <figcaption>
-              <h3 data-i18n="projets.p4.title">Centre commercial</h3>
-              <p data-i18n="projets.p4.desc">Espace commercial moderne.</p>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== SECTION À PROPOS ===== -->
-    <section class="section" id="apropos">
-      <div class="container apropos-grid">
-        <div class="apropos-media">
-          <img src="asserts/SITE_CONSTRUCTION.webp" alt="CNG Company - Chantier" loading="lazy">
-        </div>
-        <div class="apropos-content">
-          <span class="section-tag" data-i18n="apropos.tag">À propos</span>
-          <h2 class="section-title" data-i18n="apropos.title">Une entreprise de confiance</h2>
-          <p data-i18n="apropos.p1">CNG Company est une entreprise de construction fondée avec une passion pour le bâtiment et l'ingénierie. Nous conjuguons savoir-faire technique, matériaux de premier choix et rigueur pour livrer des ouvrages durables.</p>
-          <p data-i18n="apropos.p2">Notre équipe d'ingénieurs, de techniciens et d'ouvriers qualifiés intervient sur l'ensemble de vos projets, du plan initial à la remise des clés.</p>
-          <ul class="apropos-list">
-            <li data-i18n="apropos.l1">Équipe certifiée et expérimentée</li>
-            <li data-i18n="apropos.l2">Respect strict des délais et budgets</li>
-            <li data-i18n="apropos.l3">Matériaux de qualité certifiés</li>
-            <li data-i18n="apropos.l4">Suivi de chantier transparent</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary" data-i18n="apropos.cta">Discutons de votre projet</a>
+          <article class="testi-card">
+            <div class="testi-head">
+              <span class="testi-avatar" style="background-image:url('asserts/WhatsApp Image 2026-08-24 at 17.27.21 (2).jpeg')"></span>
+              <div>
+                <strong data-i18n="testi.c3.name">Sophia Nguyen</strong>
+                <div class="stars" aria-label="5 étoiles">★★★★★</div>
+              </div>
+            </div>
+            <p data-i18n="testi.c3.text">Qualité exceptionnelle et respect du budget. Je recommande vivement pour tous vos projets de construction.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== SECTION CONTACT ===== -->
-    <section class="section section-dark" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-info">
-          <span class="section-tag" data-i18n="contact.tag">Contactez-nous</span>
-          <h2 class="section-title" data-i18n="contact.title">Parlons de votre projet</h2>
-          <p data-i18n="contact.p">Laissez-nous vos coordonnées, notre équipe vous recontacte rapidement avec un devis gratuit.</p>
-          <ul class="contact-list">
-            <li>
-              <span class="contact-label" data-i18n="contact.phone">Téléphone</span>
-              <a href="tel:+1234567890">+123 456 7890</a>
-            </li>
-            <li>
-              <span class="contact-label" data-i18n="contact.email">Email</span>
-              <a href="mailto:contact@cngcompany.com">contact@cngcompany.com</a>
-            </li>
-            <li>
-              <span class="contact-label" data-i18n="contact.adress">Adresse</span>
-              <span>123 Avenue du Bâtiment, Dakar</span>
-            </li>
-          </ul>
+    <!-- ===== SECTION BLOG ===== -->
+    <section class="section section-grey" id="blog">
+      <div class="container">
+        <div class="blog-top">
+          <h2 class="section-title" data-i18n="blog.title">Building Better Together</h2>
+          <a href="#contact" class="btn btn-accent" data-i18n="blog.cta">Go Blog Page</a>
         </div>
 
-        <form class="contact-form" id="contactForm" novalidate>
-          <div class="form-group">
-            <label for="name" data-i18n="form.name">Nom complet</label>
-            <input type="text" id="name" name="name" required placeholder="Votre nom">
-          </div>
-          <div class="form-group">
-            <label for="email" data-i18n="form.email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="vous@exemple.com">
-          </div>
-          <div class="form-group">
-            <label for="phone" data-i18n="form.phone">Téléphone</label>
-            <input type="tel" id="phone" name="phone" placeholder="+123 456 7890">
-          </div>
-          <div class="form-group">
-            <label for="message" data-i18n="form.message">Message</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block" data-i18n="form.submit">Envoyer le message</button>
-          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <div class="blog-media">
+              <img src="asserts/WhatsApp Image 2026-08-24 at 17.27.26 (2).jpeg" alt="Article" loading="lazy">
+              <span class="play-icon">▶</span>
+            </div>
+            <h3 data-i18n="blog.a1.title">Impressions 3D dans la construction</h3>
+            <div class="blog-author">
+              <span class="author-avatar" style="background-image:url('asserts/WhatsApp Image 2026-08-24 at 17.27.27.jpeg')"></span>
+              <div>
+                <strong data-i18n="blog.author.name">Marc Dubois</strong>
+                <span class="author-role" data-i18n="blog.author.role">Author</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-media">
+              <img src="asserts/WhatsApp Image 2026-08-24 at 17.27.25 (1).jpeg" alt="Article" loading="lazy">
+              <span class="play-icon">▶</span>
+            </div>
+            <h3 data-i18n="blog.a2.title">La révolution des drones sur chantier</h3>
+            <div class="blog-author">
+              <span class="author-avatar" style="background-image:url('asserts/WhatsApp Image 2026-08-24 at 17.27.22 (3).jpeg')"></span>
+              <div>
+                <strong data-i18n="blog.author.name">Léa Fontaine</strong>
+                <span class="author-role" data-i18n="blog.author.role">Author</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-media">
+              <img src="asserts/WhatsApp Image 2026-08-24 at 17.27.21.jpeg" alt="Article" loading="lazy">
+            </div>
+            <h3 data-i18n="blog.a3.title">Matériaux durables pour le futur</h3>
+            <div class="blog-author">
+              <span class="author-avatar" style="background-image:url('asserts/WhatsApp Image 2026-08-24 at 17.27.21 (2).jpeg')"></span>
+              <div>
+                <strong data-i18n="blog.author.name">Omar Ndiaye</strong>
+                <span class="author-role" data-i18n="blog.author.role">Author</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION CTA ===== -->
+    <section class="cta" id="contact">
+      <div class="container cta-grid">
+        <div class="cta-text">
+          <h2 data-i18n="cta.title">Let's Create Your Ideal Space</h2>
+          <p data-i18n="cta.text">Rejoignez notre newsletter pour des astuces de construction et nos offres exclusives.</p>
+        </div>
+        <form class="subscribe" id="subscribeForm" novalidate>
+          <input type="email" id="subscribeEmail" placeholder="Enter your email" aria-label="Email" required>
+          <button type="submit" class="btn btn-accent" data-i18n="cta.btn">Subscribe</button>
         </form>
       </div>
     </section>
@@ -249,35 +412,64 @@
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container footer-grid">
-      <div class="footer-brand">
-        <a href="#accueil" class="brand">
-          <span class="brand-mark">CNG</span>
-          <span class="brand-text">COMPANY</span>
+      <div class="footer-col footer-col-brand">
+        <a href="#home" class="brand brand-light">
+          <span class="brand-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z" />
+              <circle cx="12" cy="11" r="3.5" />
+            </svg>
+          </span>
+          <span class="brand-text">CNG&nbsp;Company</span>
         </a>
-        <p data-i18n="footer.desc">Entreprise de construction au service de vos projets. Qualité, délais et professionnalisme.</p>
+        <p data-i18n="footer.desc">Entreprise de construction et d'innovation technologique. Qualité, délais et professionnalisme.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="Twitter">✕</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
       </div>
-      <div class="footer-links">
+
+      <div class="footer-col">
         <h4 data-i18n="footer.nav">Navigation</h4>
         <ul>
-          <li><a href="#accueil" data-i18n="nav.accueil">Accueil</a></li>
+          <li><a href="#home" data-i18n="nav.home">Home</a></li>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
           <li><a href="#services" data-i18n="nav.services">Services</a></li>
-          <li><a href="#projets" data-i18n="nav.projets">Projets</a></li>
-          <li><a href="#apropos" data-i18n="nav.apropos">À propos</a></li>
+          <li><a href="#blog" data-i18n="nav.blog">Blog</a></li>
           <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </div>
-      <div class="footer-contact">
-        <h4 data-i18n="footer.contact">Contact</h4>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer.utility">Utility Pages</h4>
         <ul>
-          <li><a href="tel:+1234567890">+123 456 7890</a></li>
-          <li><a href="mailto:contact@cngcompany.com">contact@cngcompany.com</a></li>
+          <li><a href="#" data-i18n="footer.u1">Property</a></li>
+          <li><a href="#about" data-i18n="about.m1.title">Our Mission</a></li>
+          <li><a href="#about" data-i18n="about.m2.title">Our Vision</a></li>
+          <li><a href="#about" data-i18n="about.m3.title">Our History</a></li>
+          <li><a href="#" data-i18n="footer.u2">404 Not Found</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <ul class="footer-contact-list">
           <li>123 Avenue du Bâtiment, Dakar</li>
+          <li><a href="mailto:contact@cngcompany.com">contact@cngcompany.com</a></li>
+          <li><a href="tel:+1234567890">+123 456 7890</a></li>
         </ul>
       </div>
     </div>
+
     <div class="footer-bottom">
-      <div class="container">
-        <p>&copy; <span id="year"></span> CNG Company. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+      <div class="container footer-bottom-row">
+        <span>© <span id="year"></span> CNG Company</span>
+        <div class="legal">
+          <a href="#" data-i18n="footer.terms">Terms of services</a>
+          <a href="#" data-i18n="footer.privacy">Privacy policy</a>
+        </div>
       </div>
     </div>
   </footer>
