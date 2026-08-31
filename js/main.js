@@ -112,6 +112,11 @@ const translations = {
     "footer.u2": "404 Non trouvée",
     "footer.terms": "Conditions d'utilisation",
     "footer.privacy": "Politique de confidentialité",
+    "footer.cookies": "Cookies",
+
+    "cookie.text": "Nous utilisons des cookies pour améliorer votre expérience. Consultez notre politique de cookies pour en savoir plus.",
+    "cookie.link": "Politique de cookies",
+    "cookie.accept": "Accepter",
   },
   en: {
     "nav.home": "Home",
@@ -191,11 +196,11 @@ const translations = {
 
     "testi.title": "Why Say Our Customers",
     "testi.sub": "They trust us and share their experience.",
-    "testi.c1.name": "Alice Martin",
+    "testi.c1.name": "Pascal Mwisha",
     "testi.c1.text": "A professional and attentive team. Our villa was delivered on time with impeccable finishing.",
-    "testi.c2.name": "David Kane",
+    "testi.c2.name": "Christian Mushid",
     "testi.c2.text": "CNG Company transformed our commercial space. Clear communication and innovative tools throughout.",
-    "testi.c3.name": "Sophia Nguyen",
+    "testi.c3.name": "Adam Badibanga",
     "testi.c3.text": "Exceptional quality and budget adherence. I highly recommend for all your construction projects.",
 
     "blog.title": "Building Better Together",
@@ -218,6 +223,11 @@ const translations = {
     "footer.u2": "404 Not Found",
     "footer.terms": "Terms of services",
     "footer.privacy": "Privacy policy",
+    "footer.cookies": "Cookies",
+
+    "cookie.text": "We use cookies to improve your experience. Read our cookie policy for more details.",
+    "cookie.link": "Cookie policy",
+    "cookie.accept": "Accept",
   },
 };
 
