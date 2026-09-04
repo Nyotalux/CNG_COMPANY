@@ -92,14 +92,6 @@ const translations = {
     "testi.c3.name": "Adam Badibanga",
     "testi.c3.text": "Qualité exceptionnelle et respect du budget. Je recommande vivement pour tous vos projets de construction.",
 
-    "blog.title": "Construire Mieux Ensemble",
-    "blog.cta": "Voir le blog",
-    "blog.a1.title": "L'impression 3D dans la construction",
-    "blog.a2.title": "La révolution des drones sur chantier",
-    "blog.a3.title": "Matériaux durables pour le futur",
-    "blog.author.name": "Marc Dubois",
-    "blog.author.role": "Auteur",
-
     "cta.title": "Créons Votre Espace Idéal",
     "cta.text": "Rejoignez notre newsletter pour des astuces de construction et nos offres exclusives.",
     "cta.btn": "S'abonner",
@@ -202,14 +194,6 @@ const translations = {
     "testi.c2.text": "CNG Company transformed our commercial space. Clear communication and innovative tools throughout.",
     "testi.c3.name": "Adam Badibanga",
     "testi.c3.text": "Exceptional quality and budget adherence. I highly recommend for all your construction projects.",
-
-    "blog.title": "Building Better Together",
-    "blog.cta": "Go Blog Page",
-    "blog.a1.title": "3D printing in the construction industry",
-    "blog.a2.title": "The drone revolution on construction sites",
-    "blog.a3.title": "Sustainable materials for the future",
-    "blog.author.name": "Marc Dubois",
-    "blog.author.role": "Author",
 
     "cta.title": "Let's Create Your Ideal Space",
     "cta.text": "Join our newsletter for construction tips and exclusive offers.",
